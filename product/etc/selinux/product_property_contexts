@@ -1,0 +1,17 @@
+#line 1 "device/xiaomi/lake/product/sepolicy/private/property_contexts"
+# MIUI ADD: Adapt_MIUIAdaptFrame
+#
+# add for wifimac prop,btmac prop,factoryid prop
+ro.ril.oem.wifimac                         u:object_r:vendor_wifimac_prop:s0
+ro.ril.oem.btmac                           u:object_r:vendor_btmac_prop:s0
+ro.ril.factory_id                          u:object_r:vendor_factoryid_prop:s0
+
+# add for sar
+vendor.sar.                                u:object_r:exported_dumpstate_prop:s0
+
+#audio CID
+vendor.audio.usb_cctoggle                  u:object_r:audio_prop:s0
+#
+# END Adapt_MIUIAdaptFrame
+#line 1 "out_prd/soong/.intermediates/system/sepolicy/contexts/product_property_contexts/android_common/gen/newline"
+
