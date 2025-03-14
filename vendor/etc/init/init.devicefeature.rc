@@ -1,0 +1,6 @@
+on post-fs && property:ro.boot.product.hardware.sku=c3yn
+    mount none  /product/etc/device_features/c3ny/pond.xml /product/etc/device_features/pond.xml bind
+
+on post-fs && property:ro.boot.lcm.name=dsi_panel_c3n_44_03_0j_dsc_vdo
+    mount none  /product/etc/device_features/c3n90hz/pond.xml /product/etc/device_features/pond.xml bind
+    mount none  /product/etc/device_features/c3n90hz/lake.xml /product/etc/device_features/lake.xml bind

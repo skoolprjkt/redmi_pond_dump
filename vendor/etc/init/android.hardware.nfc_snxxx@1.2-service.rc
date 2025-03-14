@@ -1,0 +1,10 @@
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc_snxxx@1.2-service
+    class early_hal
+    user nfc
+    group nfc
+    disabled
+
+on post-fs && property:ro.boot.hwname=lake
+    start vendor.nfc_hal_service
+    setprop ro.vendor.se.type HCE,UICC
+    setprop ro.vendor.nfc.repair 1

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parameter>
+  <item name="Config">
+    <!--value = 0x80000 + 7001-->
+    <param key="QCRIL_OEM_HOOK_REQID" value="531290"/>
+    <param key="nodelcdname" value="/sys/class/mi_display/disp-DSI-0/panel_info"/>
+    <param key="delaymode" value="SENSOR_DELAY_NOMAL"/>
+  </item>
+  <item name="LightSensor">
+    <param key="BackLightFile" value="/sys/class/leds/lcd-backlight/brightness"/>
+  </item>
+  <item name="SimtrayInsert">
+    <param key="SimtrayInsertFile" value="/sys/devices/platform/soc/soc:simtray/status"/>
+  </item>
+  <item name="Camera">
+    <param key="TwinCameraType" value="switch"/>
+    <param key="MacraBackCameraId" value="2"/>
+    <param key="isSupportQvga" value="true"/>
+    <param key="isSupportDumpRaw" value="true"/>
+  </item>
+  <item name="Charge">
+    <param key="SupportCurrent" value="true"/>
+    <param key="POWER_LEVEL_RMT_MIN" value="58"/>
+    <param key="POWER_LEVEL_RMT_MAX" value="78"/>
+    <param key="POWER_LEVEL_FQC_MIN" value="50"/>
+    <param key="POWER_LEVEL_FQC_MAX" value="80"/>
+    <param key="BatteryInfo" value="true"/>
+    <param key="isSupportIsns" value="false"/>
+    <param key="IBAT_MIN" value="700000"/>
+    <param key="IBAT_MAX" value="4000000"/>
+    <param key="ChargeType" value="/sys/class/power_supply/usb/real_type"/>
+    <param key="TypecOrientation" value="/sys/class/power_supply/usb/typec_cc_orientation"/>
+    <param key="getBatteryId" value="/sys/class/power_supply/battery/resistance_id"/>
+  </item>
+  <item name="Config">
+    <param key="ConnectorType" value="Type-C"/>
+  </item>
+  <item name="NFC">
+    <param key="NFCCommand" value="pnscr -n -p sst"/>
+    <param key="fanmodekey" value="true"/>
+  </item>
+  <item name="SecretCode">
+    <param key="WifiLogVer" value="V2"/>
+  </item>
+  <item name="FPSelf">
+    <param key="isSelfTestEnrollMerged" value="false"/>
+  </item>
+  <item name="LED">
+    <param key="hasBacklight" value="true"/>
+    <param key="hasWhiteLED" value="false"/>
+    <param key="hasRedLED" value="false"/>
+    <param key="hasGreenLED" value="false"/>
+    <param key="hasBlueLED" value="false"/>
+    <param key="hasBackTorch" value="true"/>
+    <param key="hasBackTorch2" value="false"/>
+    <param key="hasFrontTorch1" value="false"/>
+    <param key="hasBackTorch1_2" value="false"/>
+    <param key="hasKeyLED" value="false"/>
+    <param key="BackTorchFile1" value="/sys/devices/platform/flashlights_ocp8132/torch_brightness"/>
+  </item>
+  <item name="SAR_SENSOR">
+    <param key="SarFactoryEnable" value="false"/>
+  </item>
+  <item name="SoftVersion">
+    <param key="isShowIFAA_FIDO_Widevine_Keybox" value="false"/>
+    <param key="isShow_Keybox" value="true"/>
+   <param key="isMatchBoard_Tp" value="false"/>
+   <param key="isLockDownPath" value="/proc/tp_lockdown_info"/>
+     <param key="Audio_PA_Path" value="/sys/android_audio/audio_pa"/>
+  </item>
+  <item name="OTG">
+    <param key="OtgVendorFile" value="/sys/bus/usb/devices/2-1/idVendor"/>
+    <param key="OtgVersionFile" value="/sys/bus/usb/devices/2-1/version"/>
+    <param key="OtgProductFile" value="/sys/bus/usb/devices/2-1/idProduct"/>
+    <param key="TypecOrientation" value="/sys/class/power_supply/usb/typec_cc_orientation"/>
+  </item>
+     <item name="SarsensorDiff">
+    <param key="main_cap_low" value="38"/>
+    <param key="main_cap_high" value="78"/>
+    <param key="sub_cap_low" value="37"/>
+    <param key="sub_cap_high" value="77"/>
+    <param key="base_cap_low" value="60"/>
+    <param key="base_cap_high" value="100"/>
+    <param key="max_low" value="1400"/>
+    <param key="max_high" value="3400"/>
+    <param key="C1_max_low" value="1000"/>
+    <param key="C1_max_high" value="2400"/>
+    <param key="base_cup_value" value="4"/>
+    <param key="get_diff_value" value="3"/>
+    <param key="do_calibration_value" value="5"/>
+    <param key="loop_mode_value" value="3"/>
+    <param key="main_near_status_value_comparation" value="1922"/>
+    <param key="main_far_status_value_comparation" value="1922"/>
+    <param key="sub_near_status_value_comparation" value="1404"/>
+    <param key="sub_far_status_value_comparation" value="1404"/>
+    <param key="sub_basecup_max" value="100"/>
+    <param key="sub_basecup_min" value="60"/>
+    <param key="main_basecup_max" value="220"/>
+    <param key="main_basecup_min" value="140"/>
+    <param key="base_basecup_max" value="170"/>
+    <param key="base_basecup_min" value="110"/>
+  </item>
+  <item name="citBase">
+    <param key="isShowCamCal" value="false"/>
+    <param key="isShowGyroSensorCal" value="false"/>
+    <param key="isSupportSarAuthTool" value="true"/>
+    <param key="isSupportSarSensorTool" value="true"/>
+    <param key="isSupportcustimage" value="false"/>
+  </item>
+  <item name="Battery">
+    <param key="getBatteryId" value="/sys/class/power_supply/battery/resistance_id"/>
+  </item>
+  <item name="AutoTest">
+    <param key="camera_param" value="WIDE,FRONT"/>
+    <param key="unsupport_items" value="TEST_REARSUBCAMERA,TEST_BATCON,TEST_FRONTFLASH,
+     TEST_CAMERAHARDWARE,TEST_MODEMHARDWARE,TEST_ESIMCARD,TEST_AUX_MIC_TO_EARPIECE,
+     TEST_BACKMIC_TO_EARPIECE,TEST_WIRELESS_CHARGER,TEST_LOUDSPEAKERPACALIBRATION,TEST_GYRO,
+     TEST_TOPSPEAKER,TEST_CAMERACALFLAG,TEST_TOPMIC_TO_EARPIECE,DACA_CAMOTP"/>
+    <param key="suport_camera_fuseid" value="true"/>
+    <param key="camera_fuseid_list" value="w,f"/>
+    <param key="cameraFlashPath" value="sys/devices/platform/flashlights_ocp8132/torch_brightness"/>
+    <param key="mainname" value="WIDE"/> 
+    <param key="frontname" value="FRONT"/>
+    <param key="isSupport_takeapart" value="true"/>
+  </item>
+  <item name="SecretCode">
+    <param key="isSupportClearEfs" value="false"/>
+  </item>
+  <item name="FingerprintEnroll">
+    <param key="rmEnrolClick" value="true"/>
+  </item>
+ <item name="Audio">
+    <param key="SuportDouleMic" value="false"/>
+  </item>
+</parameter>
